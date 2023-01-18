@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ayush1901/tdcx-frontend/static/css/main.fb884e5e.css",
+    "main.js": "/Ayush1901/tdcx-frontend/static/js/main.830629ce.js",
+    "static/js/787.aa67bf22.chunk.js": "/Ayush1901/tdcx-frontend/static/js/787.aa67bf22.chunk.js",
+    "index.html": "/Ayush1901/tdcx-frontend/index.html",
+    "main.fb884e5e.css.map": "/Ayush1901/tdcx-frontend/static/css/main.fb884e5e.css.map",
+    "main.830629ce.js.map": "/Ayush1901/tdcx-frontend/static/js/main.830629ce.js.map",
+    "787.aa67bf22.chunk.js.map": "/Ayush1901/tdcx-frontend/static/js/787.aa67bf22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb884e5e.css",
+    "static/js/main.830629ce.js"
+  ]
+}
