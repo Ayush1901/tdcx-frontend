@@ -1,0 +1,70 @@
+
+.header_card {
+    display: flex;
+    height: 45px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 15px;
+    justify-content: space-between;
+}
+
+/* .header_data{
+    display: flex;
+    flex-direction: row;
+    
+    
+} */
+
+.header_elements-left{
+    margin-right: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.header_elements-right{
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.new_task{
+    font-family: sans-serif;
+    color: #537178;
+    margin: 12px;
+    font-size: 20px
+}
+.newTask_card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 150px;
+    margin-top: 270px;
+    margin-left: 650px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 20px;
+}
+
+.addTask_button {
+    width: 40%;
+    height: 65%;
+    margin-top: 25px !important;
+}
+
+.newTask_label{
+    font-size: 22px;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 35px;
+    color: grey;
+    font-family: sans-serif;
+}
+
+.button_display{
+    justify-content: center;
+    display: flex;
+}

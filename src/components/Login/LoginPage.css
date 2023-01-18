@@ -1,0 +1,40 @@
+
+.login_element {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 250px;
+    margin-top: 270px;
+    margin-left: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding: 20px;
+}
+
+.login_TF {
+    width: 95%;
+    height: 52px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background-color: #EEF1F8;
+    border-color: #5285EC;
+    border-radius: 50px;
+}
+
+.login_TF_input {
+    width: 95%;
+    height: 52px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background-color: #EEF1F8;
+    border-color: #5285EC;
+}
+
+.login_Button {
+    width: 100%;
+    height: 80%;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    background-color: #5285EC;
+    border-color: #5285EC;
+}

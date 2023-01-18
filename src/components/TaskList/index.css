@@ -1,0 +1,119 @@
+.css-1et7qun-MuiGrid-root{
+    margin-top: 20px !important;
+}
+
+
+.css-1wbyy0n-MuiPaper-root{
+    border-radius: 15px !important;
+    box-shadow: 0px 1px 15px 3px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+    height: 170px !important;
+    width: 280px !important;
+    overflow-y: auto;
+}
+
+.css-io9ceo-MuiPaper-root{
+    border-radius: 15px !important;
+    box-shadow: 0px 1px 15px 3px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+    margin-top : -25px !important;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.login_TF_list {
+    margin-right: 10px !important;
+    width: 30%;
+    height: 70%;
+    background-color: #D9DFEB;
+    border-color: #5285EC;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.addTask_button_list {
+    width: 100%;
+}
+
+.button_display_list{
+    justify-content: center;
+    display: flex;
+    height: 35px;
+}
+
+.search_div{
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 25px !important;
+    width: 79%;
+    margin-left: auto;
+    padding: 8px;
+}
+
+
+.font_list{
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.paper_div{
+    padding: 20px;
+}
+
+
+.textstyle_list_card{
+    text-decoration: line-through;
+    margin-left: -25px;
+}
+
+.textlist_normal{
+    margin-left: -25px;
+}
+
+.tasklist_div{
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #5285EC;
+    opacity: 1;
+    font-weight: 520;
+}
+.textstyle_list{
+    text-decoration: line-through;
+    color: #537178;
+}
+
+
+.paper_div> canvas{
+    box-sizing: border-box;
+    display: block;
+    height: 130px !important;
+    width: 240px ;
+    margin: auto !important;
+}
+
+.task_title{
+    top: 118px;
+    left: 144px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #537178;
+    opacity: 1;
+}
+
+.taskname_div{
+    text-align: left;
+    font-family:  Montserrat !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #8F9EA2;
+    opacity: 1;
+}
