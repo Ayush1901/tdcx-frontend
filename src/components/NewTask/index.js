@@ -7,6 +7,20 @@ import Dialog from "@mui/material/Dialog";
 import "./index.css";
 import axios from "axios";
 
+const muiButtonRootStyle = {
+  borderRadius: '8px !important',
+  background: "#5285EC",
+  textTransform: "none",
+}
+
+const muiDialogPaperStyle = {
+  width: '260px !important',
+  height: '195px !important',
+  borderRadius: '10px !important',
+  padding: '20px',
+  boxShadow:' 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important'
+}
+
 export default function AddTaskDialog(props) {
   const { onClose, open } = props;
   const [taskName, setTaskName] = useState("");
@@ -41,7 +55,7 @@ export default function AddTaskDialog(props) {
   };
 
   return (
-    <Dialog onClose={handleClose} open={open}>
+    <Dialog onClose={handleClose} open={open} sx={{ '& .MuiPaper-root': muiDialogPaperStyle }}>
       {/* <DialogTitle>Set backup account</DialogTitle> */}
       <div className="new_task">+ New Task</div>
       <div>
@@ -67,11 +81,7 @@ export default function AddTaskDialog(props) {
         <Button
           className="addTask_button_dialog"
           variant="contained"
-          sx={{
-            background: "#5285EC",
-            textTransform: "none",
-            borderRadius: '8px !important',
-          }}
+          sx={muiButtonRootStyle}
           onClick={handleSubmit}
         >
           + New Task

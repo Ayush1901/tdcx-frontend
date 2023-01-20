@@ -25,6 +25,34 @@ import SearchIcon from "@mui/icons-material/Search";
 import CircleIcon from "@mui/icons-material/Circle";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
+const rootGridStyle = {
+  marginTop: "25px !important",
+  flexGrow: 1,
+};
+
+const muiPaperRootStyle = {
+  borderRadius: "15px !important",
+  boxShadow:
+    "0px 1px 15px 3px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important",
+  height: "170px !important",
+  width: "280px !important",
+  overflowY: "auto",
+  backgroundColor: (theme) =>
+    theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+};
+
+const muiPaperCardStyle = {
+  borderRadius: "15px !important",
+  boxShadow:
+    "0px 1px 15px 3px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important",
+  marginTop: "-25px !important",
+  overflowY: "auto",
+  height: "300px !important",
+  width: "900px !important",
+  backgroundColor: (theme) =>
+    theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+};
+
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 export default function TaskList() {
   const [open, setOpen] = React.useState(false);
@@ -154,18 +182,11 @@ export default function TaskList() {
               </span>
             </div>
           </div>
-          <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+          <Grid sx={rootGridStyle} container spacing={2}>
             <Grid item xs={12}>
               <Grid container justifyContent="center" spacing={3}>
                 <Grid item>
-                  <Paper
-                    sx={{
-                      height: 140,
-                      width: 250,
-                      backgroundColor: (theme) =>
-                        theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-                    }}
-                  >
+                  <Paper sx={muiPaperRootStyle}>
                     <div className="paper_div">
                       <div className="task_title">Tasks Completed</div>
                       <div>
@@ -184,14 +205,7 @@ export default function TaskList() {
                 </Grid>
 
                 <Grid item>
-                  <Paper
-                    sx={{
-                      height: 140,
-                      width: 250,
-                      backgroundColor: (theme) =>
-                        theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-                    }}
-                  >
+                  <Paper sx={muiPaperRootStyle}>
                     <div className="paper_div">
                       <div className="task_title">Latest Created Tasks</div>
                       <div className="taskname_div">
@@ -223,14 +237,7 @@ export default function TaskList() {
                 </Grid>
 
                 <Grid item>
-                  <Paper
-                    sx={{
-                      height: 140,
-                      width: 250,
-                      backgroundColor: (theme) =>
-                        theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-                    }}
-                  >
+                  <Paper sx={muiPaperRootStyle}>
                     <div className="paper_div">
                       <TaskListCompletion className="chart_list" />
                     </div>
@@ -285,18 +292,11 @@ export default function TaskList() {
             </div>
           </div>
 
-          <Grid sx={{ flexGrow: 1 }} container spacing={2}>
+          <Grid sx={rootGridStyle} container spacing={2}>
             <Grid item xs={12}>
               <Grid container justifyContent="center" spacing={12}>
                 <Grid item>
-                  <Paper
-                    sx={{
-                      height: 300,
-                      width: 900,
-                      backgroundColor: (theme) =>
-                        theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-                    }}
-                  >
+                  <Paper sx={muiPaperCardStyle}>
                     {taskList.map((item) => {
                       return (
                         <>
@@ -341,11 +341,7 @@ export default function TaskList() {
                                 }}
                                 onClick={() => handleEdit(item._id)}
                               />
-                              <EditTaskDialog
-                                editDetails={editDetails}
-                                open={editOpen}
-                                onClose={handleEditClose}
-                              />
+
                               <DeleteIcon
                                 style={{
                                   color: "grey",
@@ -360,6 +356,11 @@ export default function TaskList() {
                         </>
                       );
                     })}
+                    <EditTaskDialog
+                      editDetails={editDetails}
+                      open={editOpen}
+                      onClose={handleEditClose}
+                    />
                   </Paper>
                 </Grid>
               </Grid>
